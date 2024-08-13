@@ -1,0 +1,47 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Compare Class A
+qgisMinimumVersion=3.34
+description=Compare two datasets of GPKG pointZ geometry based on french legislation formatting "class A".
+version=1
+author=Vincent Bénet
+email=vincent.benet@outlook.fr
+
+about=# Compare Class A ## What is It ? This repository is the source code of a QGIS Plugin. ## How to Use ? This plugin can be downloaded on QGIS Plugin menu. Then run it. Select described inputs and press "Ok" ## What it does ? This plugin answer the following need: What is the distance error between two data set of points, representing a line, with differents sampling distances, different begining and end. ## Inputs - Point geometry Vector Layer as a reference - QGIS Expression to get the Z value - Select the Z value unit - Point geometry Vector Layer as a result to compare - QGIS Expression to get the Z value - Select the Z value unit If the layer reference CRS is not in meter, it will be projected on EPSG:3857. The layer result will be projected on the layer reference CRS if they are differents. ## Outputs - Display of a graph showing histogram of error formated to follow Class A Regulation system.
+
+tracker=https://github.com/vincentBenet/Compare-Classe-A/issues
+repository=https://github.com/vincentBenet/Compare-Classe-A
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=python, distance, compare
+
+homepage=https://github.com/vincentBenet/Compare-Classe-A
+category=Vector
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=
+
+# If the plugin can run on QGIS Server.
+server=False
+

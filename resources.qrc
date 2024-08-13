@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/compare_class_a" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
